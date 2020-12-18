@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+One fun idea I had one day was to analyze the tweets of the two presidential candidates and see if an algorithm would be able confirm what I've noticed on tv.
 
 ### Markdown
 
@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
+# Code here!
 ## Header 2
 ### Header 3
 
