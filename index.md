@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
- `def` cleanTxt(text):
+def cleanTxt(text):
     text = re.sub(r'@[A-Za-z0-9]+', "", text) #Removes @mentions
     text = re.sub(r"#", '', text)
     text = re.sub(r"RT[\s]+", '', text)
