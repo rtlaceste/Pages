@@ -6,7 +6,7 @@ One fun idea I had one day was to analyze the tweets of the president-elect to s
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Cleaning up the data
 
 ```python
 Syntax highlighted code block
@@ -17,7 +17,7 @@ def cleanTxt(text):
     text = re.sub(r"RT[\s]+", '', text)
     text = re.sub(r"https?:\/\/\S+", "", text)
     
-    return text`
+    return text
 ## Header 2
 ### Header 3
 
