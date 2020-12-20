@@ -9,7 +9,6 @@ One fun idea I had one day was to analyze the tweets of the president-elect to s
 Cleaning up the data
 
 ```python
-Syntax highlighted code block
 
 def cleanTxt(text):
     text = re.sub(r'@[A-Za-z0-9]+', "", text) #Removes @mentions
@@ -18,6 +17,19 @@ def cleanTxt(text):
     text = re.sub(r"https?:\/\/\S+", "", text)
     
     return text
+
+def getSubjectivity(text):
+    return TextBlob(text).sentiment.subjectivity
+
+def getPolarity(text):
+    return TextBlob(text).sentiment.polarity
+
+df['Subjectivity'] = df["Tweets"].apply(getSubjectivity)
+df['Polarity'] = df["Tweets"].apply(getPolarity)
+
+
+
+
 ## Header 2
 ### Header 3
 
