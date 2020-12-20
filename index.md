@@ -41,7 +41,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](https://github.com/rtlaceste/rtlaceste.github.io/blob/gh-pages/WordCloud.JPG)
+[Link](url) and ![alt text](https://github.com/rtlaceste/rtlaceste.github.io/blob/gh-pages/WordCloud.JPG)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
