@@ -30,7 +30,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 ```
 
 
-![alt text](https://github.com/rtlaceste/rtlaceste.github.io/blob/gh-pages/WordCloud.JPG)
+![alt text](https://github.com/rtlaceste/rtlaceste.github.io/blob/main/WordCloud.JPG)
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
