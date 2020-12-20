@@ -8,7 +8,7 @@ One fun idea I had one day was to analyze the tweets of the president-elect to s
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
+```python
 Syntax highlighted code block
 
 def cleanTxt(text):
