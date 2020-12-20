@@ -1,6 +1,6 @@
 ## Project 1 - Twitter Sentiment Analysis
 
-You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
 
 One fun idea I had one day was to analyze the tweets of Joe Biden to see if an algorithm would be able to guess if his tweets carried a positive, negative, or neutral tone.
 
