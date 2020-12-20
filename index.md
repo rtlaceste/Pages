@@ -1,4 +1,4 @@
-## Project 1 - Twitter Scraping Analysis
+## Project 1 - Twitter Sentiment Analysis
 
 You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
