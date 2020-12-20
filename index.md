@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-One fun idea I had one day was to analyze the tweets of the president-elect to see if an algorithm would be able to guess if his tweets carried a positive, negative, or neutral connotation. 
+One fun idea I had one day was to analyze the tweets of Joe Biden to see if an algorithm would be able to guess if his tweets carried a positive, negative, or neutral tone.
 
 ### Markdown
 
@@ -30,7 +30,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 ```
 
 
-![alt text](https://github.com/rtlaceste/rtlaceste.github.io/blob/main/WordCloud.JPG)
+![Image](https://github.com/rtlaceste/rtlaceste.github.io/blob/main/WordCloud.JPG)
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
