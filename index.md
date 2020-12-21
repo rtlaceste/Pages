@@ -30,7 +30,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 ```
 
 
-![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/WordCloud.JPG)           
+![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/WordCloud.JPG)   WordCloud        
 
 
 
@@ -41,7 +41,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 
 
 
-![Biden Polarity](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Biden%20Bar.JPG)
+![Biden Polarity](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Biden%20Bar.JPG)    Polarity Count
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
