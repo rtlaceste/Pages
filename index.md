@@ -69,9 +69,9 @@ try:
                                          database='**',
                                          user='**',
                                          password='**')
-    mySql_insert_query = """INSERT INTO Crime (Id, Date, City, District) 
+    mySql_insert_query = f"""INSERT INTO Crime (Id, Date, City, District) 
                            VALUES 
-                           (data) """
+                           {data} """
 
     cursor = connection.cursor()
     cursor.execute(mySql_insert_query)
