@@ -53,7 +53,6 @@ The Decision Trees Classifier had 81% accuracy while the Random Forest Classifie
 
 ## Project 2 - Tweepy API
 
-[editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
 
 One fun idea I had one day was to analyze the tweets of Joe Biden to see if an algorithm would be able to guess if his tweets carried a positive, negative, or neutral tone.
 
