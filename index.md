@@ -47,11 +47,76 @@ accuracy_score(y_test, rfc_pred)
 
 The Decision Trees Classifier had 81% accuracy while the Random Forest Classifier had 77% accuracy in accurately identifying the presence of Kyphosis
 
+## Project 2 - Natural Language Processing
+
+Using Python's nltk library, I created two pipelines to classify if a message was SPAM(auto-generated) or HAM(human-generated). I also used two different classifiers (Naive Bayes and Random Forest Classifier) to observe which pipeline would perform better.
+
+
+```python
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import string
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestClassifier
+
+
+def text_process(mess):
+    """
+    1. Remove punctuation and stop words
+    2. Return list of clean text words
+    """
+    
+    nopunc = [char for char in mess if char not in string.punctuation]
+    
+    nopunc = ''.join(nopunc)
+    
+    return [word for word in nopunc.split() if word.lower() not in stopwords.words('english')]
+
+
+bow_transformer = CountVectorizer(analyzer=text_process).fit(messages['message'])
+messages_bow = bow_transformer.transform(messages['message'])
+tfid_transformer = TfidfTransformer().fit(messages_bow)
+tfidf4 = tfid_transformer.transform(bow4)
+messages_tfidf = tfid_transformer.transform(messages_bow)
+all_pred = spam_detect_model.predict(messages_tfidf)
+
+
+pipeline = Pipeline([
+    ('bow',CountVectorizer(analyzer=text_process)),('tfidf',TfidfTransformer()),('classifier', MultinomialNB())
+])
+
+pipeline2 = Pipeline([
+    ('bow',CountVectorizer(analyzer=text_process)),('tfidf',TfidfTransformer()),('classifier', RandomForestClassifier())
+])
+
+
+pipeline.fit(msg_train,label_train)
+
+predictions = pipeline.predict(msg_test)
+pipeline2.fit(msg_train,label_train)
+predictions2 = pipeline2.predict(msg_test)
+
+```
+
+![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/main/kyphosis.JPG)       
+*Seaborn Pairplot*
+
+
+### Conclusion
+I found that Naive Bayes had a total accuracy of 97%, while the Random Forest Classifier also had an accuracy of 97%.
 
 
 
 
-## Project 2 - Tweepy API
+
+## Project 3 - Tweepy API
 
 
 One fun idea I had one day was to analyze the tweets of Joe Biden to see if an algorithm would be able to guess if his tweets carried a positive, negative, or neutral tone.
@@ -101,7 +166,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 90/100 of Biden's last 100 tweets carried either a negative or neutral tone, while the rest had a negative tone. 
 
 
-## Project 3 - Visualizing Data + SQL scripting
+## Project 4 - Visualizing Data + SQL scripting
 
 In this project, Tableau Public was used for data visualization and MySQL for the sql server.
 
@@ -137,7 +202,7 @@ try:
 ![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Tableau.JPG)       
 *Tableau Dashboard*
 
-## Project 4 - Flask Application
+## Project 5 - Flask Application
 
 In this project I used Flask to set up a website's server side. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
 
