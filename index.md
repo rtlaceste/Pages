@@ -4,9 +4,9 @@ You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pa
 
 One fun idea I had one day was to analyze the tweets of Joe Biden to see if an algorithm would be able to guess if his tweets carried a positive, negative, or neutral tone.
 
-### Markdown
+### Preprocessing
 
-Cleaning up the data
+Regex was used to remove @ mentions as well as links, as these type of strings were not needed for the analysis.
 
 ```python
 
@@ -44,12 +44,9 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 
 
 
+### Conclusion
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rtlaceste/Pages/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+90/100 of Biden's last 100 tweets carried either a negative or neutral tone, while the rest had a negative tone. 
 
 ### Support or Contact
 
