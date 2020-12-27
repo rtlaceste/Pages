@@ -1,6 +1,6 @@
 ## Project 1 - Tweepy API
 
-You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
+[editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
 
 One fun idea I had one day was to analyze the tweets of Joe Biden to see if an algorithm would be able to guess if his tweets carried a positive, negative, or neutral tone.
 
@@ -87,7 +87,7 @@ try:
 
 ## Project 3 - Flask
 
-In this project. I used Flask to set up a website's server side system. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
+In this project I used Flask to set up a website's server side system. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
 
 
 ```python
