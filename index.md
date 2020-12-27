@@ -48,9 +48,6 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 
 90/100 of Biden's last 100 tweets carried either a negative or neutral tone, while the rest had a negative tone. 
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ## Project 2 - Visualizing Data + SQL scripting
 
