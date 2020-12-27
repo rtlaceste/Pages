@@ -85,7 +85,7 @@ try:
 ![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Tableau.JPG)       
 *Tableau Dashboard*
 
-## Project 3 - Flask
+## Project 3 - Flask Application
 
 In this project I used Flask to set up a website's server side system. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
 
