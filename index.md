@@ -82,15 +82,10 @@ try:
 ```
 
 
-![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/WordCloud.JPG)       
-*Wordcloud*
+![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Tableau.JPG)       
+*Tableau Dashboard*
 
 
-
-
-
-![Biden Polarity](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Biden%20Bar.JPG) 
-*Polarity Count*
 
 
 
