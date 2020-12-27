@@ -1,4 +1,4 @@
-## Project 1 - Tweepy API
+## Tweepy API
 
 You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
 
@@ -49,7 +49,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 90/100 of Biden's last 100 tweets carried either a negative or neutral tone, while the rest had a negative tone. 
 
 
-## Project 2 - Visualizing Data + SQL scripting
+## Visualizing Data + SQL scripting
 
 In this project, Tableau Public was used for data visualization and MySQL for the sql server.
 
