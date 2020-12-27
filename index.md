@@ -37,7 +37,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 
 
 
-![Biden Polarity](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Biden%20Bar.JPG)    Polarity Count
+![Biden Polarity](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Biden%20Bar.JPG) 
 *Polarity Count*
 
 
