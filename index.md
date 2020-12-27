@@ -11,7 +11,7 @@ Utilizing Python's Seaborn library to visualize and explore the data.
 ![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/main/kyphosis.JPG)       
 *Seaborn Pairplot*
 
-
+*Model:*
 ```python
 
 from sklearn.model_selection import train_test_split
@@ -37,7 +37,6 @@ accuracy_score(y_test, rfc_pred)
 
 
 ```
-*Model*
 
 
 
