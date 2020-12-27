@@ -106,7 +106,7 @@ predictions2 = pipeline2.predict(msg_test)
 
 
 ![Models](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/main/NLP2.JPG)
-*Pandas Dataframe of messages and classification*
+
 
 ### Conclusion
 I found that Naive Bayes had a total accuracy of 97%, while the Random Forest Classifier also had an accuracy of 97%.
