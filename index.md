@@ -139,7 +139,7 @@ try:
 
 ## Project 4 - Flask Application
 
-In this project I used Flask to set up a website's server side system. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
+In this project I used Flask to set up a website's server side. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
 
 
 ```python
