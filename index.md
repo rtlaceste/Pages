@@ -1,6 +1,6 @@
 ## Project 1 - Decision Trees/Random Forest Classifier
 
-[editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
+
 
 Using Python's Machine Learning library - sci-kit learn, I created a model to detect the presence of Kyphosis based on data of actual Kyphosis patients.
 
