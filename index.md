@@ -1,4 +1,4 @@
-## Project 1 - Twitter Sentiment Analysis
+## Project 1 - Tweepy API
 
 You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
 
