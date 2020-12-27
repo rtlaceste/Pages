@@ -1,4 +1,57 @@
-## Project 1 - Tweepy API
+## Project 1 - Decision Trees/Random Forest Classifier
+
+[editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
+
+Using Python's Machine Learning library - sci-kit learn, I created a model to detect the presence of Kyphosis based on data of actual Kyphosis patients.
+
+### Exploring Data
+Utilizing Python's Seaborn library to visualize and explore the data.
+
+
+![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/main/kyphosis.JPG)       
+*Seaborn Pairplot*
+
+
+```python
+
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import classification_report,confusion_matrix
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
+
+dtree = DecisionTreeClassifier()
+dtree.fit(X_train, y_train)
+predictions = dtree.predict(X_test)
+
+
+rfc = RandomForestClassifier(n_estimators=200)
+rfc.fit(X_train,y_train)
+rfc_pred = rfc.predict(X_test)
+
+
+accuracy_score(y_test, rfc_pred)
+
+
+```
+
+
+
+
+
+
+### Conclusion
+
+The Decision Trees Classifier had 81% accuracy while the Random Forest Classifier had 77% accuracy in accurately identifying the presence of Kyphosis
+
+
+
+
+
+## Project 2 - Tweepy API
 
 [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
 
@@ -49,7 +102,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 90/100 of Biden's last 100 tweets carried either a negative or neutral tone, while the rest had a negative tone. 
 
 
-## Project 2 - Visualizing Data + SQL scripting
+## Project 3 - Visualizing Data + SQL scripting
 
 In this project, Tableau Public was used for data visualization and MySQL for the sql server.
 
@@ -85,7 +138,7 @@ try:
 ![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Tableau.JPG)       
 *Tableau Dashboard*
 
-## Project 3 - Flask Application
+## Project 4 - Flask Application
 
 In this project I used Flask to set up a website's server side system. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
 
