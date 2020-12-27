@@ -37,7 +37,7 @@ accuracy_score(y_test, rfc_pred)
 
 
 ```
-
+*Model*
 
 
 
