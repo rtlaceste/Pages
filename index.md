@@ -1,4 +1,4 @@
-## Tweepy API
+## Project 1 - Tweepy API
 
 You can use the [editor on GitHub](https://github.com/rtlaceste/Pages/edit/gh-pages/index.md).
 
@@ -49,7 +49,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 90/100 of Biden's last 100 tweets carried either a negative or neutral tone, while the rest had a negative tone. 
 
 
-## Visualizing Data + SQL scripting
+## Project 2 - Visualizing Data + SQL scripting
 
 In this project, Tableau Public was used for data visualization and MySQL for the sql server.
 
@@ -84,6 +84,72 @@ try:
 
 ![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Tableau.JPG)       
 *Tableau Dashboard*
+
+## Project 3 - Flask
+
+In this project. I used Flask to set up a website's server side system. The website can be found [here](https://rtlaceste.pythonanywhere.com/).
+
+
+```python
+
+from flask import Flask, render_template, url_for, request, redirect
+import csv
+
+app = Flask(__name__)
+print(__name__)
+
+
+@app.route('/')
+def my_home():
+    return render_template('index.html')
+
+
+@app.route('/<string:page_name>')
+def html_page(page_name):
+    return render_template(page_name)
+
+
+def write_to_file(data):
+    with open('database.txt', mode='a') as database:
+        email = data["email"]
+        subject = data["subject"]
+        message = data["message"]
+        file = database.write(f'\n{email},{subject},{message}')
+
+
+def write_to_csv(data):
+    with open('database.csv', mode='a', newline='') as database2:
+        email = data["email"]
+        subject = data["subject"]
+        message = data["message"]
+        csv_writer = csv.writer(database2, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer.writerow([email, subject, message])
+
+
+@app.route('/submit_form', methods=['POST', 'GET'])
+def submit_form():
+    if request.method == 'POST':
+        try:
+            data = request.form.to_dict()
+            write_to_csv(data)
+            return redirect('/thank_you.html')
+        except:
+            return 'did not save to database'
+    else:
+        return 'Something went wrong, please try again'
+```
+
+![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/main/flask.JPG)       
+*Website Interface*
+
+
+
+
+
+
+
+
+
 
 
 
