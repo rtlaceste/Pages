@@ -53,7 +53,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 
 In this project, Tableau Public was used for data visualization and MySQL for the sql server.
 
-### SQL
+### MySQL
 
 Logging into SQL as well as inserting a table and values.
 
