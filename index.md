@@ -38,6 +38,7 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 
 
 ![Biden Polarity](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Biden%20Bar.JPG) 
+
 *Polarity Count*
 
 
@@ -50,3 +51,50 @@ df['Polarity'] = df["Tweets"].apply(getPolarity)
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+## Project 2 - Visualizing Data + SQL scripting
+
+In this project, Tableau Public was used for data visualization and MySQL for the sql server.
+
+### SQL
+
+Logging into SQL as well as inserting a table and values.
+
+
+```python
+
+import mysql.connector
+from mysql.connector import Error
+from mysql.connector import errorcode
+
+try:
+    connection = mysql.connector.connect(host='localhost',
+                                         database='**',
+                                         user='**',
+                                         password='**')
+    mySql_insert_query = """INSERT INTO Crime (Id, Date, City, District) 
+                           VALUES 
+                           (data) """
+
+    cursor = connection.cursor()
+    cursor.execute(mySql_insert_query)
+    connection.commit()
+    print(cursor.rowcount, "Records inserted successfully")
+    cursor.close()
+
+```
+
+
+![Image](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/WordCloud.JPG)       
+*Wordcloud*
+
+
+
+
+
+![Biden Polarity](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/gh-pages/Biden%20Bar.JPG) 
+*Polarity Count*
+
+
+
+
