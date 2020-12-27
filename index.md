@@ -103,7 +103,6 @@ pipeline2.fit(msg_train,label_train)
 predictions2 = pipeline2.predict(msg_test)
 
 ```
-*NLP Models*
 
 
 ![Models](https://raw.githubusercontent.com/rtlaceste/rtlaceste.github.io/main/NLP2.JPG)
