@@ -49,7 +49,7 @@ The Decision Trees Classifier had 81% accuracy while the Random Forest Classifie
 
 ## Project 2 - Natural Language Processing
 
-Using Python's nltk and sklearn libraries, I created two pipelines to classify if a message was SPAM(auto-generated) or HAM(human-generated). I also used two different classifiers (Naive Bayes and Random Forest Classifier) to observe which pipeline would perform better.
+Using Python's nltk and sklearn libraries, I created two pipelines to classify if a message was SPAM (auto-generated) or HAM (human-generated). I also used two different classifiers (Naive Bayes and Random Forest Classifier) to observe which pipeline would perform better.
 
 
 ```python
